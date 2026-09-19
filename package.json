@@ -1,53 +1,27 @@
 {
-  "name": "autoship",
-  "version": "0.2.0",
-  "description": "CLI tool to automate changeset-based releases with AI-generated descriptions",
-  "type": "module",
-  "main": "dist/index.js",
-  "bin": {
-    "autoship": "./dist/index.js"
-  },
+  "name": "velclaw-deploy-console",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Velclaw deployment control plane and preview console",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "start": "node dist/index.js",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
-  },
-  "keywords": [
-    "release",
-    "changeset",
-    "cli",
-    "automation",
-    "ai",
-    "semver",
-    "npm"
-  ],
-  "author": "Vercel Labs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vercel-labs/autoship.git"
-  },
-  "homepage": "https://github.com/vercel-labs/autoship#readme",
-  "bugs": {
-    "url": "https://github.com/vercel-labs/autoship/issues"
-  },
-  "license": "Apache-2.0",
-  "engines": {
-    "node": ">=18.0.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@clack/prompts": "^0.11.0",
-    "ai": "^6.0.49",
-    "chalk": "^5.6.2",
-    "commander": "^14.0.2",
-    "ora": "^9.1.0",
-    "simple-git": "^3.30.0"
+    "next": "^16.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.468.0"
   },
   "devDependencies": {
-    "@types/node": "^25.0.10",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   }
 }
