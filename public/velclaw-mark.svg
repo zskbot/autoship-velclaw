@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Velclaw animated V</title><desc id="desc">Animated Velclaw V mark with cyan to violet glow.</desc>
+  <defs><linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#38bdf8"/><stop offset=".52" stop-color="#8b5cf6"/><stop offset="1" stop-color="#d946ef"/></linearGradient><filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect x="2" y="2" width="60" height="60" rx="0" fill="#0b1020" stroke="url(#g)" stroke-width="1.5"/>
+  <path d="M15 14 L25 14 L32 35 L39 14 L49 14 L36 51 L28 51 Z" fill="url(#g)" filter="url(#glow)"><animate attributeName="opacity" values=".82;1;.82" dur="2.4s" repeatCount="indefinite"/></path>
+  <path d="M20 42 L32 30 L44 42" fill="none" stroke="#f5f3f7" stroke-width="2" stroke-linecap="square" opacity=".9"><animate attributeName="stroke-dasharray" values="0 60;60 0;0 60" dur="2.8s" repeatCount="indefinite"/></path>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="url(#g)" stroke-width=".7" opacity=".35" stroke-dasharray="2 5"><animateTransform attributeName="transform" type="rotate" from="0 32 32" to="360 32 32" dur="8s" repeatCount="indefinite"/></circle>
+</svg>
